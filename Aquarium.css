@@ -1,0 +1,60 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aquarium container */
+.aquarium {
+    width: 100vw;
+    height: 100vh;
+    background-color: #87CEEB;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fish styles */
+.fish {
+    width: 50px;
+    height: 30px;
+    background-color: orange;
+    position: absolute;
+    border-radius: 50%;
+    animation: swim 5s infinite linear;
+}
+
+#fish1 {
+    background-color: #ff6347;
+    top: 20%;
+    left: 10%;
+}
+
+#fish2 {
+    background-color: #ffd700;
+    top: 40%;
+    left: 30%;
+}
+
+#fish3 {
+    background-color: #20b2aa;
+    top: 60%;
+    left: 50%;
+}
+
+/* Fish swimming animation */
+@keyframes swim {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
